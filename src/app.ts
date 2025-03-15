@@ -10,6 +10,13 @@ const app = express();
 app.use(express.json());
 app.use(logger);
 
+// Home Route
+app.get('/', (req, res) => {
+    res.send(`
+      <h1>Welcome to the Note-Taking API!</h1>
+    `);
+  });
+
 // Routes
 app.use('/api/notes', noteRoutes);
 
