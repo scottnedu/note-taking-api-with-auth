@@ -1,17 +1,23 @@
 # Note-Taking API
 
-A simple RESTful API for managing notes, built with **Node.js**, **Express**, **TypeScript**, and **MongoDB**. This API allows you to create, read, update, and delete notes, as well as organize them by categories.
+A simple RESTful API for managing notes, built with __Node.js__, __Express__, __TypeScript__, and __MongoDB__. This API allows you to create, read, update, and delete notes, as well as organize them by categories.
 
----
+## Features  
 
-## Features
+1. Create a Note: Add a new note with a title, content, and category.
 
-- **Create a Note**: Add a new note with a title, content, and category.
-- **List All Notes**: Retrieve all notes from the database.
-- **Get a Specific Note**: Fetch a single note by its ID.
-- **Update a Note**: Modify an existing note's title, content, or category.
-- **Delete a Note**: Remove a note by its ID.
-- **Get Notes by Category**: Fetch all notes belonging to a specific category.
-- **Type Safety**: Built with TypeScript for better type checking and developer experience.
-- **Persistence**: Uses MongoDB to store notes persistently.
-- **Homepage**: A friendly welcome message with a link to the `/api/notes` endpoint.
+2. List All Notes: Retrieve all notes from the database.
+
+3. Get a Specific Note: Fetch a single note by its ID.
+
+4. Update a Note: Modify an existing note's title, content, or category.
+
+5. Delete a Note: Remove a note by its ID.
+
+6. Get Notes by Category: Fetch all notes belonging to a specific category.
+
+7. Type Safety: Built with TypeScript for better type checking and developer experience.
+
+8. Persistence: Uses MongoDB to store notes persistently.
+
+9. Homepage: A friendly welcome message with a link to the `/api/notes` endpoint.
