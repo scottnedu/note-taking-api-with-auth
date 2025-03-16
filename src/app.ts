@@ -14,7 +14,7 @@ app.use(logger);
 app.get('/', (req, res) => {
     res.send(`
       <h1>Welcome to the Note-Taking API!</h1>
-      <p>If you want to view notes, kindly use this URL: <a href="https://note-taking-api-with-category.onrender.com/api/notes"</a></p>
+      <p>If you want to view notes, kindly use this URL:<a href="https://note-taking-api-with-category.onrender.com/api/notes"></a></p>
     `);
   });
 
