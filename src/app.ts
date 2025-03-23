@@ -4,11 +4,12 @@ import userAuthRoutes from './routes/routes.userAuth';
 import connectDB from './config/config.db';
 import errorHandler from './middleware/middlewares.errorHandlers';
 
-// Connect to MongoDB
-connectDB();
 
 // Create Express app
 const app = express();
+
+// Connect to MongoDB
+connectDB();
 
 // Middleware
 app.use(express.json());
