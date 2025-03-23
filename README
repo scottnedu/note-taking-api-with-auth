@@ -20,4 +20,14 @@ A simple RESTful API for managing notes, built with __Node.js__, __Express__, __
 
 8. Persistence: Uses MongoDB to store notes persistently.
 
-9. Homepage: A friendly welcome message with a link to the `/api/notes` endpoint.
+9. I implemented basic authentication for the note-taking API
+
+10. I added a user system with registration and login using typed controllers
+
+11. I implemented JWT authentication with typed payloads for protected routes
+
+12. I added two new endpoints with request validation via TypeScript:
+
+     - POST ⁠ /api/auth/register ⁠ - Register a new user
+
+     - POST ⁠ /api/auth/login ⁠ - Login and get JWT token
