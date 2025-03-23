@@ -31,3 +31,4 @@ A simple RESTful API for managing notes, built with __Node.js__, __Express__, __
      - POST ⁠ /api/auth/register ⁠ - Register a new user
 
      - POST ⁠ /api/auth/login ⁠ - Login and get JWT token
+  
