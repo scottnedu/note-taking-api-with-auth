@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
-import Note, { INote } from '../models/Note';
+import Note, { INote } from '../models/models.notes';
+import Category, { ICategory } from '../models/models.categories';
 
 // Get all notes
 export const getAllNotes = async (req: Request, res: Response) => {
@@ -71,6 +72,18 @@ export const getNotesByCategoryId = async (req: Request, res: Response) => {
   try {
     const notes = await Note.find({ category: req.params.categoryId });
     res.status(200).json(notes);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
+// Create a new category
+export const createCategory = async (req: Request, res: Response) => {
+  try {
+    const { category } = req.body;
+    const newCategory: ICategory = new Category({ category });
+    await newCategory.save();
+    res.status(201).json(newCategory);
   } catch (error) {
     res.status(500).json({ message: 'Server error' });
   }
